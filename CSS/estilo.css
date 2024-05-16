@@ -1,0 +1,382 @@
+/* Estilos para los elementos del formulario */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+@font-face {
+    font-family: "MavenPro-Medium";
+    src: url(../font/MavenPro-Medium.ttf);
+}
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url(../font/MavenPro-Regular.ttf);
+}   
+@font-face {
+    font-family: "MavenPro-Bold";
+    src: url(../font/MavenPro-Bold.ttf);
+}   
+@font-face {
+    font-family: "MavenPro-ExtraBold";
+    src: url(../font/MavenPro-ExtraBold.ttf);
+}  
+.cabeza{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:"MavenPro-Bold";
+}
+nav .logo{
+    width: 80px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+a:hover{
+    color: orange;
+}
+.nav_color{
+    color: #d9373d;
+}
+.video-atras{
+    position: absolute;
+    z-index: -1;
+}
+@media (max-width: 1024px) {
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav .socialmedia {
+        margin-top: 10px;
+    }
+    .cabeza {
+        padding: 0 2%;
+    }
+    .video-atras{
+        position: absolute;
+        z-index: -1;
+        height: 720px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 4%;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .cabeza {
+        height: auto;
+        padding: 0 2%;
+    }
+    .fondoheader{
+        width: 100px;
+        margin: auto;
+    }
+}
+.mid_{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+h1{
+    color: #d9373d;
+    margin: auto;
+    font-size: 2,8em;
+    font-family: "MavenPro-Bold";  
+}
+.quienessomos{
+    text-align: center;
+    padding: 200px;
+}
+.titulo{
+    color: #d9373d;
+    font-size: 40px;
+    font-family: "MavenPro-Regular";  
+}
+.parrafo_1{
+    color:#1241ce;
+    font-family: "MavenPro-ExtraBold";
+    width: 50%;
+    font-size: 0.9em;
+    margin: 0 auto;
+}
+@media (max-width: 1024px) {
+    .quienessomos {
+        padding: 100px;
+    }
+    .parrafo_1 {
+        width: 70%;
+        font-size: 0.95em;
+    }
+    h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .quienessomos {
+        padding: 50px;
+    }
+    .parrafo_1 {
+        width: 80%;
+        font-size: 1em;
+    }
+    .titulo {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quienessomos {
+        padding: 20px;
+    }
+    .parrafo_1 {
+        width: 90%;
+        font-size: 1.1em;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+.grid div{
+    margin: 25px;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
+.piepagina{
+    width: 100%;
+    background-color: #1241ce;
+    font-family: "MavenPro-Medium";
+}
+.piepagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.piepagina .grupo1 .box figure{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piepagina .grupo1 .box figure img{
+    width: 200px;
+}
+.piepagina .grupo1 .box h3{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: "MavenPro-Bold";
+}
+.piepagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.piepagina .grupo1 .redsocial{
+    height: 45px;
+    line-height: 45px;
+}
+.piepagina .grupo2{
+    text-align: center;
+    color: #f8ea44;
+}
+@media screen and (max-width:800px){
+    .piepagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+} 
+h4{
+    color: #d9373d;
+    text-align: center;
+    font-size: 2,8em;
+    font-family: "MavenPro-Bold";  
+    margin: auto;
+    width: 100%;
+}
+.Productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+.Productos div{
+    margin: 25px;
+}
+@media (max-width: 768px) {
+    .Productos {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .Productos {
+        grid-template-columns: auto;
+    }
+}
+h3{
+    color: black;
+    text-align: center;
+    font-family: "MavenPro-Regular";
+}
+.map-responsive{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 1.2em; 
+    }
+    .map-responsive iframe {
+        width: 100%; 
+        height: auto; 
+    }
+}
+.contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cajaformulario {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.cajaformulario div {
+    margin-bottom: 20px;
+    font-family: "MavenPro-Regular";
+}
+
+.cajaformulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cajaformulario input[type="text"],
+.cajaformulario input[type="email"],
+.cajaformulario textarea,
+.cajaformulario select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cajaformulario textarea {
+    resize: vertical;
+}
+
+.cajaformulario input[type="submit"],
+.cajaformulario input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #f7a739;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cajaformulario input[type="submit"]:hover,
+.cajaformulario input[type="reset"]:hover {
+    background-color: #f8ea44;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .cajaformulario {
+        padding: 20px;
+    }
+
+    .cajaformulario input[type="submit"],
+    .cajaformulario input[type="reset"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cajaformulario input[type="text"],
+    .cajaformulario input[type="email"],
+    .cajaformulario textarea,
+    .cajaformulario select {
+        width: 100%;
+    }
+}
